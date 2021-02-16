@@ -1,0 +1,299 @@
+$background: #314e52;
+$title: #f2a154;
+$background-cards: #e7e6e1;
+$bg-button: #f7f6e7;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.alert p {
+  margin-bottom: 0 !important;
+}
+body {
+  background: #000428; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, $background, #000008);
+  background: linear-gradient(to right, $background, #000008);
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+header {
+  margin: 30px 0;
+}
+.contenido {
+  padding: 20px;
+}
+.presupuesto p {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+.presupuesto p span {
+  font-weight: normal;
+}
+#gastos {
+  margin-bottom: 30px;
+}
+h1 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  color: $title;
+  text-align: center;
+  font-size: 3.5rem;
+}
+h2 {
+  font-family: "Roboto Mono", monospace;
+  font-weight: 100;
+  color: $background;
+  margin-bottom: 30px;
+  font-size: 2.8rem;
+  text-align: center;
+}
+.campo {
+  margin-bottom: 2rem;
+}
+.error {
+  text-align: center;
+}
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.alert-primary {
+  color: black;
+  background-color: #70abeb;
+  border: none;
+}
+.alert-success {
+  @extend .alert-primary;
+  color: #155724;
+  background-color: #07250e;
+}
+.alert-danger {
+  @extend .alert-primary;
+  color: #b43c48;
+  background-color: #440d13;
+}
+.alert-warning {
+  @extend .alert-primary;
+  color: #856404;
+  background-color: #fff3cd;
+}
+.gastos-realizados {
+  margin-bottom: 2rem;
+}
+.gastos-realizados li {
+  list-style: none;
+  margin-bottom: 0rem;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 1rem 0;
+}
+.gastos-realizados li:last-of-type {
+  margin-bottom: 0 !important;
+}
+.gastos-realizados li p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.gastos-realizados li p .gasto {
+  background-color: #004085;
+  padding: 1rem;
+  color: white;
+}
+.error {
+  background-color: rgba(228, 78, 78, 0.671);
+  color: rgb(85, 41, 41);
+  padding: 0.6rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0.6rem 0;
+  border-radius: 0.4rem;
+}
+.MainWrapper {
+  padding: 2rem 0;
+  .wrapperSection {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+    .wrapperAlerts {
+      background-color: $background-cards;
+      margin-top: 2rem;
+      width: 350px;
+      padding: 1rem 2rem;
+      border-radius: 20px;
+      box-sizing: border-box;
+    }
+    .wrapperPregunta {
+      width: 350px;
+      box-sizing: border-box;
+      background-color: $background-cards;
+      padding: 30px;
+      border-radius: 20px;
+      margin-top: 2rem;
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .input {
+          border: none;
+          border-radius: 2rem;
+          background-color: $title;
+          padding: 0.5rem 1rem;
+          color: $background;
+          margin-bottom: 0.5rem;
+          outline: none;
+        }
+        .input::placeholder {
+          color: $background;
+        }
+        .enviar {
+          border: none;
+          color: $background;
+          border-radius: 2rem;
+          background-color: $title;
+          padding: 0.5rem 1rem;
+          outline: none;
+        }
+      }
+    }
+    .wrapperList {
+      @extend .wrapperPregunta;
+      .gastos-realizados {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .gasto {
+          background-color: $background;
+          padding: 0.4rem 0.7rem;
+          border-radius: 0.5rem;
+          color: $title;
+        }
+      }
+    }
+  }
+}
