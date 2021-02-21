@@ -16,8 +16,10 @@ El demo de la Aplicación podras encontrarlo en la siguiente dirección:
 ## Correr desde tu máquina
 
 ocupa las siguientes comandos para clonar el repo en la ubicación que quieras.
-
+```
 git clone dirección del repo
 cd admonistrador_de_citas
 npm install
 npm start
+
+```
